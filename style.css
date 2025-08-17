@@ -64,9 +64,13 @@ body {
 }
 
 .profile {
+    height: 64px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    margin-top: -1rem;
 }
 
 .pfp {
@@ -75,7 +79,7 @@ body {
     margin-right: 1rem;
 }
 
-.shareBtn {
+.shareBtnOff {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +91,7 @@ body {
     cursor: pointer;
 }
 
-.shareBtn:hover {
+.shareBtnOff:hover {
     background-color: hsl(210, 46%, 90%);
 }
 
@@ -107,6 +111,48 @@ body {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+}
+
+.shareState {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--veryDarkGrayishBlue);
+    color: var(--grayishBlue);
+    padding: 1rem 2rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    margin-top: -1rem;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.shareBtnOn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    margin-left: auto;
+    background-color: var(--desaturatedDarkBlue);
+    fill: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.shareBtnOn:hover {
+    background-color: hsl(214, 17%, 46%);
+}
+
+.shareBtnOn img {
+    fill: white;
+}
+
+.shareState p {
+    letter-spacing: 4px;
 }
     
 .attribution a { 
