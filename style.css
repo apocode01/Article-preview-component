@@ -98,10 +98,6 @@ body {
     font-size: 16px;
 }
 
-.shareBtnOff:hover {
-    background-color: hsl(210, 46%, 90%);
-}
-
 .profile ul {
     list-style: none;
 }
@@ -128,8 +124,8 @@ body {
     background-color: var(--veryDarkGrayishBlue);
     color: var(--grayishBlue);
     border-radius: 0 0 0.625rem 0.625rem;
-    opacity: 0;
     /* Hidden at first */
+    opacity: 0;
     height: 0;
     padding: 0 2rem;
     transition: all 0.3s ease;
@@ -138,6 +134,11 @@ body {
 
 .icon {
     cursor: pointer;
+}
+
+.test {
+    position: relative;
+    margin-left: auto;
 }
 
 .shareBtnOn {
@@ -153,13 +154,13 @@ body {
     border: none;
 }
 
-.shareBtnOn:hover {
-    background-color: hsl(214, 17%, 46%);
-}
-
 .shareBtnOn i {
     color: white;
     font-size: 16px;
+}
+
+.shareDesktop {
+    display: none;  
 }
 
 .shareState p {
@@ -176,17 +177,17 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        max-width: 711px;
+        max-width: 713px;
     }
 
     .imgContainer {
         height: 100%;
-        width: 38%;
+        width: 40%;
         border-radius: 0.625rem 0 0 0.625rem;
     }
 
     .wrapper {
-        width: 62%;
+        width: 60%;
     }
 
     .drawersImg {
@@ -204,5 +205,50 @@ body {
 
     .title {
         font-size: 20px;
+    }
+
+    .shareDesktop {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        bottom: 3.5rem;
+        left: 50%;          
+        transform: translateX(-50%); 
+        gap: 1rem;
+        padding: 1rem 3rem;
+        background-color: var(--veryDarkGrayishBlue);
+        color: var(--grayishBlue);
+        border-radius: 0.625rem; 
+        transition: opacity 0.3s ease;
+        /* Hidden at first */
+        opacity: 0;  
+        pointer-events: 0;
+    }
+
+    .shareDesktop p {
+        letter-spacing: 4px;
+    }
+
+    .triangle {
+        position: absolute;
+        color: var(--veryDarkGrayishBlue);
+        bottom: 2.9rem;
+        left: 50%;          
+        transform: translateX(-50%); 
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid;
+        transition: opacity 0.3s ease;
+        /* Hidden at first */
+        opacity: 0;
+        pointer-events: 0;
+    }
+
+    .shareState {
+        display: none;
     }
 }
