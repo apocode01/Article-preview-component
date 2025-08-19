@@ -224,7 +224,7 @@ body {
         transition: opacity 0.3s ease;
         /* Hidden at first */
         opacity: 0;  
-        pointer-events: 0;
+        pointer-events: none;
     }
 
     .shareDesktop p {
@@ -245,7 +245,7 @@ body {
         transition: opacity 0.3s ease;
         /* Hidden at first */
         opacity: 0;
-        pointer-events: 0;
+        pointer-events: none;
     }
 
     .shareState {
